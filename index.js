@@ -4,10 +4,14 @@ import dns from "node:dns";
 
 fs.watchFile("./index.html", (current, previous) => {
   console.log(
-    chalk.orange(`File size of the current file: ${current.size} bytes`)
+    chalk.blue(
+      `File size of the current file: ${chalk.underline(current.size)} bytes`
+    )
   );
   console.log(
-    chalk.orange(`File size of the previous file: ${previous.size} bytes`)
+    chalk.blue(
+      `File size of the previous file: ${chalk.underline(previous.size)} bytes`
+    )
   );
 });
 
