@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-file-observing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilosMladenovicWork/nodejs-file-observing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilosMladenovicWork/nodejs-file-observing/issues"
+  },
+  "homepage": "https://github.com/MilosMladenovicWork/nodejs-file-observing#readme"
+}
