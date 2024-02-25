@@ -1,17 +1,14 @@
 import chalk from "chalk";
+import chalkAnimation from "chalk-animation";
 import fs from "fs";
 import dns from "node:dns";
 
 fs.watchFile("./index.html", (current, previous) => {
-  console.log(
-    chalk.blue(
-      `File size of the current file: ${chalk.underline(current.size)} bytes`
-    )
+  chalkAnimation.rainbow(
+    `File size of the current file: ${current.size} bytes`
   );
-  console.log(
-    chalk.blue(
-      `File size of the previous file: ${chalk.underline(previous.size)} bytes`
-    )
+  chalkAnimation.rainbow(
+    `File size of the previous file: ${previous.size} bytes`
   );
 });
 
