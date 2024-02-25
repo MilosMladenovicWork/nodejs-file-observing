@@ -17,8 +17,8 @@ fs.watchFile("./index.html", (current, previous) => {
 
 dns.lookup("google.com", (err, address) => {
   if (err) {
-    return console.log(chalk.red(err));
+    return console.log(chalk.bgRed(err));
   }
 
-  console.log(chalk.blue(address));
+  console.log(chalk.bgBlue(address));
 });
